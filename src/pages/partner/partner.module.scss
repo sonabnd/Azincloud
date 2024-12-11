@@ -1,0 +1,43 @@
+@import '../../assets//styles/style.scss';
+
+.partner {
+    .partnerTop {
+        padding-top: rem(92);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: rem(72);
+        .left {
+            width: 50%;
+            p {
+                line-height: rem(25.6);
+            }
+            h2 {
+                font-size: rem($title);
+                margin-bottom: rem(28);
+            }
+        }
+        .right {
+            width: 42%;
+        }
+    }
+    .partnerBottom {
+        background-image: url(../../assets/images/statics/partner-bg-gradient.png);
+        background-size: cover;
+        color: $white;
+        .list {
+            width: 48%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    line-height: rem(25.6);
+                    margin-bottom: rem(16);
+                    margin-right: rem(91);
+                    width: 30%;
+                }
+            }
+    }    
+}
+}

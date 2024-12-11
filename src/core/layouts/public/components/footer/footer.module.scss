@@ -1,0 +1,106 @@
+@import '../../../../../assets/styles/style.scss';
+
+footer {
+    background-color: $footer-bg-color;
+
+    .footerTop {
+        padding-top: rem(56);
+        padding-bottom: rem(52);
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            padding-top: rem(46);
+
+            .subscribeText {
+                margin-bottom: rem(20);
+            }
+
+            .subscribe {
+                position: relative;
+
+                input {
+                    box-sizing: border-box;
+                    background-color: $white;
+                    padding: rem(16) rem(0) rem(16) rem(24);
+                    border-radius: rem(79);
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                }
+
+                ::placeholder {
+                    color: $title-text-color;
+                    font-size: rem($web-little-text);
+                }
+
+                button {
+                    background-color: $main-text-color;
+                    color: $white;
+                    font-size: rem($text);
+                    text-align: center;
+                    padding: rem(16) rem(38);
+                    border: none;
+                    border-radius: rem(79);
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            @include breakpoint($md) {
+                padding-bottom: rem(22);
+                border-bottom: 1px solid ;
+                margin-bottom: rem(22);
+            }
+        }
+        
+        .mobileHelp {
+            display: none;
+            @include breakpoint($md) {
+                display: block;
+                padding-bottom: rem(22);
+                margin-bottom: rem(22);
+                border-bottom: 1px solid ;
+            }
+        }
+        .middle {
+            @include breakpoint($md) {
+                display: block;
+                padding-bottom: rem(22);
+                margin-bottom: rem(22);
+                border-bottom: 1px solid ;
+            }
+        }
+
+        .right {
+
+            .webHelp {
+                @include breakpoint($md) {
+                    display: none;
+                }
+            }
+            @include breakpoint($md) {
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+        @include breakpoint($md) {
+            flex-direction: column;
+        }
+    }
+
+    .footerBottom {
+        background-color: $footer-bottom-bg-color;
+        text-align: center;
+        font-size: rem($web-little-text);
+        padding: rem(18) 0;
+
+        span {
+            margin-right: rem(5);
+        }
+    }
+}
+
+
+

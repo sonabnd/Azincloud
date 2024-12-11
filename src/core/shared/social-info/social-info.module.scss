@@ -1,0 +1,26 @@
+@import '/src/assets/styles/style.scss';
+
+.socialList {
+    display: flex;
+    gap: rem(20);
+
+    li {
+        display: flex;
+        align-items: center;
+
+        span {
+            width: 80%;
+            display: inline-block;
+            line-height: rem(24);
+        }
+
+        a {
+            color: $title-text-color;
+        }
+
+        img {
+            margin-right: rem(11);
+        }
+    }
+
+}

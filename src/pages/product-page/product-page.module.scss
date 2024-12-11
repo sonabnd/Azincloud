@@ -1,0 +1,36 @@
+@import '/src/assets/styles/style.scss';
+
+.products {
+    margin-top: rem(92);
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: rem(55);
+        @include breakpoint($md) {
+            flex-wrap: wrap;
+        }
+        .heading {
+            font-size: rem($title);
+            @include breakpoint($md) {
+                text-align: center;
+                font-size: rem(24);
+                margin-bottom: rem(34);
+                width: $max-width;
+            }
+        }
+    }
+    .productContainer {
+        display: flex;
+        gap: calc((100% - 3 * 31%) / 2);
+        flex-wrap: wrap;
+        .card {
+            width: 31%;
+        }
+        > * {
+            margin-bottom: rem(32);
+            @include breakpoint($md) {
+                margin-bottom: rem(44);
+            }
+        }
+    }
+}

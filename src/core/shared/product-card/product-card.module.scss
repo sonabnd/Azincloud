@@ -1,0 +1,45 @@
+@import '/src/assets/styles/style.scss';
+
+
+.box {
+    padding-top: rem(32);
+    padding-bottom: rem(32);
+    border-radius: rem(28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $products-text-color;
+    background-color: $white-opacity;
+    box-shadow: 0px 4px 16px 0px rgba(18, 71, 95, 0.07);
+
+    @include breakpoint($md) {
+        width: 96%;
+    }
+
+    .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem($products-circle);
+        height: rem($products-circle);
+        background-color: $products-circle-bg-color;
+        border-radius: rem(36);
+    }
+
+    p {
+        margin-top: rem(12);
+        margin-bottom: rem(6);
+    }
+
+    span {
+        margin-bottom: rem(32);
+    }
+
+    .price {
+        color: $products-price-text-color;
+        padding: rem(18);
+        background-color: $products-price-bg;
+        border-radius: rem(18);
+    }
+}

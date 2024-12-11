@@ -1,0 +1,35 @@
+@import '../../assets/styles/style.scss';
+
+.contact {
+    .contactTop {
+        margin-top: rem(92);
+        @include breakpoint($md) {
+            margin-top: rem(44);
+        }
+        .heading {
+            font-size: rem($title);
+            margin-bottom: rem(38);
+        }
+        .contactLeft {  
+            .line {
+                border-bottom: 1px solid $contact-line-color;
+                width: rem(391);
+                margin-top: rem(28);
+                margin-bottom: rem(28);
+            }
+            
+        }
+    }
+    .contactBottom {
+        background-image: url('../../assets/images/statics/about-bg-gradient.png');
+        background-size: cover;
+        margin-top: rem(82);
+        padding: rem(44) rem(0) rem(44) rem(44);
+        border-radius: rem(28);
+        margin-bottom: rem(140);
+        @include breakpoint($md) {
+            padding-left: 0;
+            margin-bottom: rem(44);
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.introduction {
+  height: 52vh;
+}
+@media screen and (max-width: 768px) {
+  .introduction {
+    height: 80vh;
+  }
+}
+.introduction .intro {
+  position: relative;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .introduction .intro .introTop {
+    height: 20vh;
+    width: 100%;
+    background-color: red;
+  }
+}
+.introduction .intro .introTop img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .introduction .intro .introTop img {
+    height: 100vh;
+    width: 100%;
+  }
+}
+.introduction .intro .introBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .introduction .intro .introBottom {
+    display: none;
+  }
+}
+.introduction .intro .introBottom img {
+  width: 100%;
+}
+.introduction .introMain {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 11.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .introduction .introMain {
+    flex-direction: column;
+    top: 8.5rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .introduction .introMain .introRight {
+    display: none;
+  }
+}
+.introduction .introMain .introLeft {
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 768px) {
+  .introduction .introMain .introLeft {
+    margin-bottom: 2.8125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.introduction .introMain .introLeft h2 {
+  margin-bottom: 7.1875rem;
+  font-size: 3.125rem;
+  width: 76%;
+}
+@media screen and (max-width: 768px) {
+  .introduction .introMain .introLeft h2 {
+    margin-bottom: 2.8125rem;
+    width: 86%;
+  }
+}
+.introduction .introMain .introLeft .imgMobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .introduction .introMain .introLeft .imgMobile {
+    display: block;
+    margin-bottom: 1.9375rem;
+  }
+}
+.introduction .introMain .introLeft .sliderContainer {
+  display: flex;
+  gap: 1.625rem;
+}
+.introduction .introMain .introLeft .sliderContainer .slider {
+  width: 4.0625rem;
+  border: 3px solid rgb(45, 153, 220);
+}/*# sourceMappingURL=introduction.module.css.map */

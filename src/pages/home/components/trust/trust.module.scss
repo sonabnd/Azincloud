@@ -1,0 +1,53 @@
+@import '../../../../assets/styles/style.scss';
+
+.trust {
+    padding: rem(92) 0;
+    .trustContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+            font-size: rem($title);
+        }
+        .text{
+            font-size: rem($text);
+            margin-top: rem(12);
+            margin-bottom: rem(47);
+            width: 80%;
+            line-height: rem(25.6);
+            text-align: center;
+        }
+        .cardContainer {
+            display: flex;
+            justify-content: space-between;
+            gap: rem(32);
+            width: 100%;
+            @include breakpoint($md) {
+                flex-wrap: wrap;    
+            }
+            .card {
+                width: 24%;
+                padding: rem(24);
+                background-color: $white-opacity;
+                border-radius: rem(28);
+                height: rem(226);
+                // .intro {
+                    // position: relative;
+                    .title {
+                        display: flex;
+                        margin-bottom: rem(24);
+                        h3 {
+                            font-size: rem($text);
+                            color: $products-text-color;
+                            margin-left: rem(16);
+                        }
+                    }
+                    p {
+                        color: $green-500;
+                        line-height: rem(25.6);
+                    }
+            }
+        }
+    }
+}

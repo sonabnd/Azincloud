@@ -1,0 +1,52 @@
+@import '../../../../assets/styles/style.scss';
+
+.about {
+    display: flex;
+    padding: rem(77) 0;
+    @include breakpoint($md) {
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+        padding: rem(44) 0;
+    }
+    .left {
+        position: relative;
+        .topImg {
+            position: absolute;
+            left: 0;
+        }
+    }
+    .right {
+        width: 52%;
+        color: $title-text-color;
+        margin-top: rem(80);
+        @include breakpoint($md) {
+            width: 95%;
+            margin: auto;
+        }
+        h2 {
+            font-size: rem($title);
+        }
+        p {
+            margin-top: rem(12);
+            margin-bottom: rem(22);
+            font-size: rem($text);
+            width: 86%;
+            line-height: 25.6px;
+            @include breakpoint($md) {
+                width: 100%;
+            }
+        }
+        button {
+            background-color: $blue-opacity;
+            width: rem(192);
+            text-align: center;
+            font-size: rem($text);
+            border: none;
+            border-radius: rem(41);
+            height: rem(54);
+            color: $white-opacity;
+            cursor: pointer;
+        }
+    }
+}

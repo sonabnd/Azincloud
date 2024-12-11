@@ -1,0 +1,31 @@
+@import '../../assets/styles/style.scss';
+
+.notFound {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    padding-top: rem(139);
+    padding-bottom: rem(139);
+    border-radius: rem(28);
+    margin-top: rem(142);
+    margin-bottom: rem(113);
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .text {
+            margin-top: rem(64);
+            margin-bottom: rem(44);
+            font-size: rem(22);
+        }
+        .btn {
+            font-size: rem($text);
+            color: $white;
+            border-radius: rem(41);
+            padding: rem(16) rem(53);
+            background-color: $main-text-color;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import '/src/assets/styles/style.scss';
+
+.filterContainer {
+    background-color: $white;
+    border: 1px solid $news-card-border-color;
+    border-radius: rem(28);
+    padding: rem(26) rem(26) rem(26);
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    top: rem(80);
+
+    .dateContainer {
+        margin-bottom: rem(42);
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        .fromToDate {
+            background-color: $main-bg;
+            border-radius: rem(41);
+            padding: rem(16) rem(34);
+
+            input::placeholder {
+                color: $title-text-color ;
+            }
+        }
+    }
+
+    .btn {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+
+        button {
+            padding: rem(15) rem(16);
+            border-radius: rem(41);
+            width: 48%;
+            background-color: $main-text-color;
+            cursor: pointer;
+        }
+
+        .reset {
+            background: none;
+            border: 1px solid $title-text-color;
+        }
+
+        .search {
+            color: $white;
+            border: none;
+        }
+    }
+}

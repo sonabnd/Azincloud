@@ -1,0 +1,28 @@
+@import '/src/assets/styles/style.scss';
+
+.contactList {
+                
+    li {
+        margin-bottom: rem(22);
+        display: flex;
+        align-items: center;
+
+        span {
+            width: 80%;
+            display: inline-block;
+            line-height: rem(24);
+        }
+
+        a {
+            color: $title-text-color;
+        }
+
+        img {
+            margin-right: rem(11);
+        }
+    }
+
+    li:last-child {
+        margin-bottom: rem(0);
+    }
+}

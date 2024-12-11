@@ -1,0 +1,35 @@
+@import '../../../../assets/styles/style.scss';
+
+.client {
+    background-color: $white-opacity;
+    padding: rem(92) 0;
+    
+    @include breakpoint($md) {
+        padding: rem(44) 0;
+    }
+    h2 {
+        font-size: rem($title);
+        color: $title-text-color;
+        text-align: center;
+        margin-bottom: rem(46);
+    }
+    .clientContainer {
+        display: flex;
+        gap: rem(19);
+        @include breakpoint($md) {
+            width: $max-width;
+        }
+        .box {
+            width: 16%;
+            border-right: 2px solid $client-line-color;
+            display: flex;
+            justify-content: center;
+            @include breakpoint($md) {
+                width: 30%;
+            }
+        }
+        .box:last-child {
+            border-right: none;
+        }
+    }
+}

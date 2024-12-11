@@ -1,0 +1,9 @@
+@import '/src/assets/styles/style.scss';
+
+.menu {
+    display: none;
+    @include breakpoint(768px) {
+        display: block;
+    }
+    
+}

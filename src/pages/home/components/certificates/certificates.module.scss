@@ -1,0 +1,23 @@
+@import '../../../../assets/styles/style.scss';
+
+.certificates {
+    background-color: $main-bg;
+    padding: rem(62) 0;
+    .title {
+        font-size: rem($title);
+        color: $title-text-color;
+        text-align: center;
+        margin-bottom: rem(44);
+    }
+    .certificatesContainer {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .card {
+            width: 16%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

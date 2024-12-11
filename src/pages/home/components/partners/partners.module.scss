@@ -1,0 +1,56 @@
+@import '../../../../assets/styles/style.scss';
+
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+
+    .partnersLeft {
+        width: 30%;
+
+        .title {
+            margin-top: 90px;
+            font-size: rem($title);
+            color: $title-text-color;
+            margin-bottom: rem(14);
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: rem(146);
+
+        .cardContainer {
+            margin-bottom: rem(39);
+            margin-top: rem(44);
+            width: 100%;
+            display: flex;
+            height: rem(313);
+
+            .slider {
+                display: flex;
+                z-index: 6;
+
+                .card {
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .details {
+            display: flex;
+            gap: rem(22);
+
+            span {
+                font-size: rem($text);
+                color: $blue-opacity;
+            }
+        }
+    }
+}

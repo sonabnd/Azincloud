@@ -1,0 +1,301 @@
+body {
+  overflow-x: hidden;
+  color: #12475F;
+  background-color: #F5F9FC;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 84%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  overflow-x: hidden;
+  color: #12475F;
+  background-color: #F5F9FC;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 84%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about .aboutTop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4.8125rem 0;
+  background-image: url(../../assets/images/statics/about-bg-gradient.png);
+  background-size: cover;
+  margin-bottom: 7rem;
+}
+.about .aboutTop .left {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .about .aboutTop .left {
+    width: 95%;
+    margin: auto;
+  }
+}
+.about .aboutTop .left .bottomImg {
+  position: absolute;
+  left: 0;
+}
+.about .aboutTop .right {
+  width: 50%;
+  color: #12475F;
+  color: #FFF;
+  margin-left: 5.75rem;
+}
+.about .aboutTop .right h2 {
+  font-size: 2rem;
+}
+.about .aboutTop .right p {
+  margin-top: 0.75rem;
+  margin-bottom: 1.375rem;
+  font-size: 1.125rem;
+  width: 86%;
+  line-height: 25.6px;
+}
+@media screen and (max-width: 768px) {
+  .about .aboutTop .right {
+    width: 95%;
+    margin: auto;
+  }
+}
+.about .aboutBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .aboutBottom .bottomHeader {
+  width: 70%;
+  text-align: center;
+}
+.about .aboutBottom .bottomHeader p {
+  line-height: 1.6rem;
+  margin-top: 0.75rem;
+}
+.about .aboutBottom .bottomMain {
+  margin-top: 7rem;
+  margin-bottom: 4.0625rem;
+}
+.about .aboutBottom .bottomMain .textImgTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8.375rem;
+}
+@media screen and (max-width: 768px) {
+  .about .aboutBottom .bottomMain .textImgTop {
+    flex-wrap: wrap-reverse;
+  }
+}
+.about .aboutBottom .bottomMain .textImgTop .textImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 48%;
+}
+@media screen and (max-width: 768px) {
+  .about .aboutBottom .bottomMain .textImgTop .textImg {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+}
+.about .aboutBottom .bottomMain .textImgTop .textImg .purposeTarget .purposeTargetHeader {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  font-size: 1.25rem;
+}
+.about .aboutBottom .bottomMain .textImgTop .textImg .purposeTarget .text {
+  line-height: 1.6rem;
+}
+.about .aboutBottom .bottomMain .textImgTop .purposeTargetImg {
+  width: 31.25rem;
+  height: 31.25rem;
+}
+.about .aboutBottom .bottomMain .textImgTop .purposeTargetImg img {
+  border-radius: 1.75rem;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .about .aboutBottom .bottomMain .textImgTop:last-child {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=about-page.module.css.map */

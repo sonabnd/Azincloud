@@ -1,0 +1,22 @@
+@import '../../../../../assets/styles/style.scss';
+
+.header {
+    background-image: url('../../../../../assets/../assets/images/statics/header-bg.png');
+    background-size: cover;
+    color: $header-text-color;
+    padding-top: rem(38);
+    padding-bottom: rem(38);
+    @include breakpoint($md) {
+        padding-top: rem(12);
+        padding-bottom: rem(12);
+        
+    }
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        .right {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

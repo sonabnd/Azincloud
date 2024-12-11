@@ -1,0 +1,50 @@
+@import '../../../../assets/styles/style.scss';
+
+.news {
+    background-color: $white;
+    padding-top: rem(78);
+    padding-bottom: rem(60);
+    .headerContainer {
+        margin-bottom: rem(44);
+        font-size: rem($title);
+        color: $title-text-color;
+        display: flex;
+        justify-content: space-between;
+        .heading {
+            font-size: rem($title);
+        }
+        .headerRight {
+            img {
+                cursor: pointer;
+            }
+            .rightArrow {
+                margin-right: rem(69);
+                margin-left: rem(22);
+            }
+            .webMore {
+                font-size: rem($text);
+                color: $blue-opacity;
+                cursor: pointer;
+            }
+            @include breakpoint($md) {
+                display: none;
+            }
+        }
+    }
+    .sliderContainer {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .mobileMore {
+        display: none;
+        @include breakpoint($md) {
+            display: block;
+            text-align: center;
+            margin-top: rem(42);
+            color: $main-text-color;
+            font-size: rem($text);
+        }
+    }
+}
+

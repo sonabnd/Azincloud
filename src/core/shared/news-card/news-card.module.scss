@@ -1,0 +1,47 @@
+@import '../../../assets/styles/style.scss';
+
+.card {
+    box-sizing: border-box;
+    border-radius: rem(28);
+    background-color: $news-card-bg;
+    border: 1px solid $news-card-border-color;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: rem(10);
+    padding-bottom: rem(27);
+    margin-bottom: rem(32);
+    position: relative;
+    cursor: pointer;
+    height: rem(430);
+    @include breakpoint($md) {
+        width: 100%;
+    }
+    .cardIntro {
+        width: 97%;
+        .img {
+            img {
+                border-radius: rem(21);
+                width: 100%;
+            }
+        }
+        .textContainer {
+            padding: rem(0) rem(12);
+            .heading {
+                line-height: rem(25.6);
+                margin-top: rem(20);
+                margin-bottom: rem(10);
+            }
+            .text {
+                font-size: rem(14);
+                line-height: rem(22.4);
+                margin-bottom: rem(22);
+            }
+            .date {
+                font-size: rem(14);
+                position: absolute;
+                bottom: rem(27);
+            }
+        }
+    }
+}

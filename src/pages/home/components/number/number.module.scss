@@ -1,0 +1,40 @@
+@import '../../../../assets/styles/style.scss';
+
+.number {
+    padding-top: rem(74);
+    padding-bottom: rem(92);
+    background-image: url(../../../../assets/images/statics/number-bg.png);
+    background-size: cover;
+    .numberContainer {
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint($md) {
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 25%;
+            border-right: 1px solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $white-opacity;
+            border-right: 1px solid $white-opacity;
+            @include breakpoint($md) {
+                border-right: none;
+                border-bottom: 1px solid $white-opacity;
+            }
+            .text {
+                margin-top: rem(34) ;
+                margin-bottom: rem(8);
+                font-size: rem(24);
+            }
+            span {
+                font-size: rem(50);
+            }
+        }
+        .card:last-child {
+            border-right: none;
+        }
+    }
+}

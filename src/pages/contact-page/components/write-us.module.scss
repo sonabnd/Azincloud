@@ -1,0 +1,156 @@
+@import '/src/assets/styles/style.scss';
+
+.title {
+    margin-bottom: 20px;
+    font-size: rem($title);
+    color: $white;
+}
+.bottom {
+    @include breakpoint($md) {
+        width: 95%;
+        margin: auto;
+    }
+
+    .formContainer {
+        display: flex;
+        justify-content: space-between;
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+            @include breakpoint($md) {
+                width: 100%;
+            }
+            .row {
+                display: flex;
+                gap: 22px;
+    
+                .formItem {
+                    flex: 1;
+                }
+            }
+    
+            .input,
+            .select,
+            .textarea {
+                border-radius: rem($contact-form-border-radius);
+                border: none;
+                padding: rem(16) rem(0) rem(16) rem(24);
+    
+                &::placeholder {
+                    font-size: rem($web-little-text);
+                    color: $title-text-color;
+                }
+            }
+    
+            .textareaUpload {
+                position: relative;
+    
+                .textarea {
+                    padding-top: rem(24);
+                    padding-left: rem(24);
+                    resize: none;
+                }
+    
+                .uploadContainer {
+                    position: absolute;
+                    bottom: rem(40);
+                    left: rem(28);
+    
+                    .uploadButton {
+                        padding: rem(26) rem(40);
+                        border: 1px dashed $main-text-color;
+                        border-radius: rem($contact-form-border-radius);
+                    }
+    
+                }
+            }
+    
+    
+            .deleteButton {
+                color: red;
+            }
+    
+            .fileDetails {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+    
+            .robot {
+                background-color: $white;
+                border-radius: rem(41);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: rem(8) rem(32);
+    
+                .checkbox {
+                    margin-top: rem(20);
+                }
+    
+                .img {
+                    width: rem(66);
+                    height: rem(66);
+                }
+            }
+    
+            .submitButton {
+                background-color: red;
+                color: $white;
+                border: none;
+                border-radius: rem($contact-form-border-radius);
+                padding-top: rem(25);
+                padding-bottom: rem(25);
+                font-size: rem($text);
+                text-align: center;
+                margin-top: rem(44);
+                cursor: pointer;
+                width: 100%;
+                background-color: $main-text-color;
+            }
+        }
+    
+        .imgContainer {
+            position: relative;
+            @include breakpoint ($md) {
+                display: none;
+            }
+            .contactImg {
+                position: absolute;
+                top: 0;
+                right: rem(40);
+                top: rem(70)
+            }
+        }
+    }
+}
+
+.modal {
+    padding-bottom: rem(44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: rem(536);
+    border-radius: rem(41);
+    background-color: $white;
+    position: absolute;
+    top: rem(380);
+    left: 36%;
+
+    .close {
+        display: flex;
+        justify-content: flex-end;
+        width: 92%;
+        margin-top: rem(22);
+    }
+
+    .btn {
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+        width: 80%;
+        margin-top: rem(65);
+        border-radius: rem(41);
+        background: none;
+    }
+}

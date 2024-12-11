@@ -1,0 +1,13 @@
+@import '/src/assets/styles/style.scss';
+
+.rightList {
+    li {
+        margin-bottom: rem(22);
+        a {
+            color: $title-text-color;
+        }
+    }
+    .socialList {
+        margin-top: rem(34);
+    }
+}
