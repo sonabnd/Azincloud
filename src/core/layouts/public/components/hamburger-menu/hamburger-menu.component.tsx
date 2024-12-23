@@ -19,6 +19,8 @@ const HamburgerMenu = ({ closeMenu }: any) => {
   const languages = useStore('languages');
   const locale = useStore('locale');
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0); 
+  
   const currentLang = useMemo(() => {
       return localStorage.getItem(`${enviroment.applicationName}-locale`) as ILang || 'en';
   }, [locale]);

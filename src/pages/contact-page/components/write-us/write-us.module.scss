@@ -137,7 +137,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-
+    @include breakpoint($md) {
+        width: rem(380);
+    }
     .close {
         display: flex;
         justify-content: flex-end;
@@ -152,6 +154,9 @@
         margin-top: rem(44);
         border-radius: rem(41);
         background: none;
+        &:hover {
+            background-color: $main-text-color;
+        }
     }
 }
 

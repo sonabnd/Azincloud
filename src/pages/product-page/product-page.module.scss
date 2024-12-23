@@ -2,6 +2,9 @@
 
 .products {
     margin-top: rem(92);
+    @include breakpoint($md) {
+        margin-top: rem(44);
+    }
     .header {
         margin-bottom: rem(55);
         @include breakpoint($md) {

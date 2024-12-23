@@ -44,7 +44,9 @@
                     }
         
                     &::placeholder {
-                        color: $news-placeholder-color;
+                        @include breakpoint($md) {
+                            font-size: rem(14);
+                        }
                     }
                 }
         
