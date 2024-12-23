@@ -37,6 +37,10 @@
             width: 100%;
             display: flex;
             height: rem(313);
+            @include breakpoint($md) {
+                margin-bottom: rem(12);
+                height: rem(290);
+            }
             .mySwiper {
                 .slider {
                     display: flex;
@@ -46,14 +50,18 @@
                         height: 100%;
                         cursor: pointer;
                         display: flex;
+                        align-items: center;
                         @include breakpoint($md) {
                             display: block;
                             gap: rem(3);
                         }
                         img {
-                            width: 244px;
-                            height: 146px;
                             margin-right: rem(30);
+                            @include breakpoint($md) {
+                                margin-right: rem(0);
+                                width: 244px;
+                                height: 120px;
+                            }
                         }
                         .card {
                             &:last-child {
