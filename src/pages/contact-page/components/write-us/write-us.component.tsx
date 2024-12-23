@@ -20,10 +20,9 @@ const WriteUsComponent = () => {
     const translate = useLocalization();
 
     const onFinish = (values: any) => {
-        console.log("Form values:", values);
-        console.log('test');
         setIsModalOpen(true);
         document.body.style.backgroundImage = `url('/src/assets/images/statics/opacity.png')`;
+        form.resetFields();
         form.resetFields();
     };
 
@@ -38,6 +37,7 @@ const WriteUsComponent = () => {
 
     return (
         <>
+        {isModalOpen && <div className={styles.overlay}></div>}
             <div className={styles.bottom}>
                 <h1 className={styles.title}>{translate('write_us_title')}</h1>
                 <div className={styles.formContainer}>
@@ -85,11 +85,17 @@ const WriteUsComponent = () => {
                             <Form.Item
                                 name="message"
                                 rules={[
-                                    { required: true, message: translate('number_message') },
+                                    { required: true, message: translate('text_correct_message') },
                                     { max: 282, message: translate('text_correct_message') },
                                 ]}
+                                validateTrigger="onBlur"
                             >
-                                <TextArea rows={10} placeholder={translate('text_placeholder')} className={styles.textarea} />
+                                <TextArea 
+                                rows={10} 
+                                placeholder={translate('text_placeholder')} 
+                                className={styles.textarea}
+                                onFocus={() => form.validateFields(['message'])}
+                                />
                             </Form.Item>
 
                             <Form.Item name="file" className={styles.uploadContainer}>

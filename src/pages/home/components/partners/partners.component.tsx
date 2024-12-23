@@ -86,7 +86,7 @@ const PartnersComponent = () => {
             <Swiper
               direction={windowWidth <= 768 ? 'horizontal' : 'vertical'}
               slidesPerView={2}
-              spaceBetween={10}
+              spaceBetween={30}
               breakpoints={{
                 1024: {
                   slidesPerView: 2,

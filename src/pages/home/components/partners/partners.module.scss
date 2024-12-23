@@ -14,8 +14,7 @@
         }
     }
     .partnersLeft {
-        // width: 50%;
-
+        margin-right: rem(100);
         .title {
             margin-top: 90px;
             font-size: rem($title);
@@ -30,6 +29,7 @@
         margin-left: rem(46);
         @include breakpoint($md) {
             margin-left: 0;
+            margin-right: 0;
         }
         .cardContainer {
             margin-bottom: rem(39);
@@ -56,6 +56,12 @@
                             margin-right: rem(30);
                         }
                         .card {
+                            &:last-child {
+                                margin-left: rem(16);
+                                @include breakpoint($md) {
+                                    margin-left: rem(0);
+                                }
+                            }
                             @include breakpoint($md) {
                                 margin-bottom: rem(12);
                             }
@@ -82,7 +88,4 @@
             display: none;
         }
     }
-    // @include breakpoint($lg) {
-    //     display: none;
-    // }
 }
