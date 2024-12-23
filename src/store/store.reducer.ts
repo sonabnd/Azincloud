@@ -1,6 +1,10 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IState } from "./store";
-import { en } from "../assets/lang/en";
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {IState} from './store';
+import {az} from '../assets/lang/az';
+import {en} from '../assets/lang/en';
+import {ru} from '../assets/lang/ru';
+import {ILang} from '../assets/lang/lang';
+import { enviroment } from '../core/configs/app.config';
 
 const initialState: IState = {
     loader: false,
@@ -8,21 +12,20 @@ const initialState: IState = {
         {
             id: 1,
             key: 'az',
-            value: 'AZ'
+            value: 'Az'
         }, {
             id: 2,
             key: 'en',
-            value: 'EN'
+            value: 'En'
         },
         {
             id: 3,
             key: 'ru',
-            value: 'RU'
+            value: 'Ru'
         }
     ],
     locale: en,
 };
-
 
 export const rootSlice = createSlice({
     name: 'root',
@@ -31,18 +34,18 @@ export const rootSlice = createSlice({
         setLoader: (state: IState, action: PayloadAction<boolean>) => {
             state.loader = action.payload;
         },
-        // setLocale: (state: IState, action: PayloadAction<ILang>) => {
-        //     const lang = {
-        //         az,
-        //         en,
-        //         ru
-        //     };
-        //     state.locale = lang[action.payload];
-        //     localStorage.setItem(`${environment.applicationName}-locale`, action.payload);
-        // },
+        setLocale: (state: IState, action: PayloadAction<ILang>) => {
+            const lang = {
+                az,
+                en,
+                ru
+            };
+            state.locale = lang[action.payload];
+            localStorage.setItem(`${enviroment.applicationName}-locale`, action.payload);
+        },
     },
-})
+});
 
-export const {setLoader,} = rootSlice.actions;
+export const {setLoader, setLocale} = rootSlice.actions;
 
 export default rootSlice.reducer;

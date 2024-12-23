@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('/src/assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('/src/assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato Black';
+    src: url('/src/assets/fonts/Lato/Lato-Black.ttf') format('truetype');
+}
+
+$latoRegular: 'Lato Regular';
+$latoBold: 'Lato Bold';
+$latoBlack: 'Lato Black';
+$fontMain: 'Lato Regular';

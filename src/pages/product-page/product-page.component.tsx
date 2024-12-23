@@ -1,28 +1,52 @@
-import { en } from '../../assets/lang/en'
-import AvailableUpcoming from '../../core/shared/available-upcoming/available-upcoming.component'
-import { useAvailablePr } from '../../core/shared/product-card/actions/product.card-query'
-import ProductCardComponent from '../../core/shared/product-card/product-card.component'
-import css from './product-page.module.scss'
+import { useState, useCallback } from "react";
+import { useProductsByType } from "../../core/shared/product-card/actions/product.card-query";
+import ProductCardComponent from "../../core/shared/product-card/product-card.component";
+import AvailableUpcoming from "../../core/shared/available-upcoming/available-upcoming.component";
+import css from "./product-page.module.scss";
+import useLocalization from "../../assets/lang";
 
 const ProductPageComponent = () => {
-  const {data} = useAvailablePr();
+  const [type, setType] = useState("available"); 
+  const { data } = useProductsByType(type); 
+  const translate = useLocalization();
+  
+  const handleTypeChange = useCallback((newType:any)=> {
+    setType(newType);
+  },[type])
+
   return (
-    <div className={`${css.products} container`}>
+    <div className='container'>
+      <div className={css.products}>
         <div className={css.header}>
-            <h2 className={css.heading}>{en.products_services_title}</h2>
-            <AvailableUpcoming/>
+          <div className='row'>
+            <div className='col-md-6'>
+                <h2 className={css.heading}>{translate('products_services_title')}</h2>
+            </div>
+            <div className='col-md-6'>
+              <AvailableUpcoming onTypeChange={handleTypeChange} />
+            </div>
+          </div>
         </div>
         <div className={css.productContainer}>
-          {
-            data?.map(card => (
-              <div className={css.card}>
-                <ProductCardComponent card={card} key={card.id}/>
+          <div className='row'>
+            {data?.map((card:any) => (
+              <div className='col-md-4'>
+                <div className={css.card} key={card.id}>
+                  <ProductCardComponent card={card} />
+                </div>
               </div>
-            ))
-          }
+            ))}
+          </div>
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductPageComponent
+export default ProductPageComponent;
+
+
+
+
+
+

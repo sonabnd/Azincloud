@@ -11,10 +11,12 @@ import { Navigation } from "swiper/modules";
 import { useCallback, useRef } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
+import useLocalization from '../../../../assets/lang';
 
 function NewsComponent() {
   const { data } = useNews();
   const swiperRef = useRef(null);
+  const translate = useLocalization();
 
   const handleNextClick = useCallback(() => {
     if (swiperRef.current) {
@@ -30,9 +32,9 @@ function NewsComponent() {
 
   return (
     <div className={css.news}>
-      <div className="container">
+      <div className='container'>
         <div className={css.headerContainer}>
-          <h2 className={css.heading}>{en.news_blog_title}</h2>
+          <h2 className={css.heading}>{translate('news_blog_title')}</h2>
           <div className={css.headerRight}>
             <img
               src={ArrowLeft}
@@ -47,7 +49,7 @@ function NewsComponent() {
               onClick={handleNextClick}
             />
             <Link className={css.webMore} to={Routes.news}>
-              {en.more_text}
+              {translate('more_text')}
             </Link>
           </div>
         </div>
@@ -59,6 +61,20 @@ function NewsComponent() {
             modules={[Navigation]}
             className="mySwiper"
             ref={swiperRef}
+            breakpoints={{
+              1024: {
+                slidesPerView: 3,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              575: {
+                slidesPerView: 1.5,
+              },
+              0: {
+                slidesPerView: 1.2,
+              },
+            }}
           >
             {data?.map((news) => (
               <SwiperSlide key={news.id} className={css.slider}>

@@ -3,14 +3,18 @@
 .contact {
     .contactTop {
         margin-top: rem(92);
+        display: flex;
+        justify-content: space-between;
         @include breakpoint($md) {
             margin-top: rem(44);
         }
         .heading {
             font-size: rem($title);
             margin-bottom: rem(38);
+            font-size: $latoBold;
         }
         .contactLeft {  
+            flex:1;
             .line {
                 border-bottom: 1px solid $contact-line-color;
                 width: rem(391);
@@ -19,6 +23,15 @@
             }
             
         }
+        iframe {
+            border: 2px solid $green-100;
+            border-radius: 28px;
+            filter: grayscale(10%);
+            @include breakpoint($lg) {
+                display: none;
+            }
+        }
+        
     }
     .contactBottom {
         background-image: url('../../assets/images/statics/about-bg-gradient.png');

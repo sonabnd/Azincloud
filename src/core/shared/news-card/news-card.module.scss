@@ -1,46 +1,54 @@
 @import '../../../assets/styles/style.scss';
 
 .card {
-    box-sizing: border-box;
     border-radius: rem(28);
     background-color: $news-card-bg;
     border: 1px solid $news-card-border-color;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    padding-top: rem(10);
-    padding-bottom: rem(27);
-    margin-bottom: rem(32);
-    position: relative;
-    cursor: pointer;
-    height: rem(430);
+    padding: rem(10) rem(10) rem(22);
+    transition: all .3s ease;
+
     @include breakpoint($md) {
         width: 100%;
     }
+
     .cardIntro {
-        width: 97%;
         .img {
+            width: 100%;
+            height: 100%;
+            border-radius: 21px;
+
             img {
-                border-radius: rem(21);
-                width: 100%;
+                max-width: 100%;
+                vertical-align: middle;
+                border-radius: 21px;
             }
         }
+
         .textContainer {
-            padding: rem(0) rem(12);
             .heading {
-                line-height: rem(25.6);
+                font-size: 1rem;
+                line-height: 1.5625rem;
+                font-family: $latoBold;
                 margin-top: rem(20);
-                margin-bottom: rem(10);
+                min-height: 3.125rem;
             }
+
             .text {
                 font-size: rem(14);
                 line-height: rem(22.4);
+                color: $title-text-color;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-top: rem(10);
                 margin-bottom: rem(22);
             }
+
             .date {
                 font-size: rem(14);
-                position: absolute;
-                bottom: rem(27);
+                color: $green-300;
+                font-weight: 400;
             }
         }
     }

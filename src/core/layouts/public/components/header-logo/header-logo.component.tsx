@@ -10,7 +10,7 @@ const HeaderLogoComponent = () => {
         <Link to={Routes.home}>
         <img src={Logo} alt={en.img_alt_logo} />
         </Link>
-  </div>
+    </div>
   )
 }
 

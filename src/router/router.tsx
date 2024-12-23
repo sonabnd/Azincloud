@@ -3,13 +3,13 @@ import PublicComponent from '../core/layouts/public/public.component';
 import {Routes} from './routes'
 import HomeComponent from "../pages/home/home.component";
 import AuthProtectedComponent from "./protected/auth-protected.component";
-import PartnerComponent from "../pages/partner/partner.component";
 import NotFoundComponent from "../pages/not-found/not-found.component";
 import NewsPageComponent from "../pages/news-page/news-page.component";
 import ContactComponent from "../pages/contact-page/contact-page.component";
 import ProductPageComponent from "../pages/product-page/product-page.component";
 import AboutPageComponent from "../pages/about-page/about-page.component";
 import NewsDetailsComponent from "../pages/news-details/news.details.component";
+import PartnerPageComponent from "../pages/partner/partner-page.component";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
             },
             {
                 path: Routes.partners,
-                element: <PartnerComponent/>
+                element: <PartnerPageComponent/>
             },
             {
                 path: Routes.about,

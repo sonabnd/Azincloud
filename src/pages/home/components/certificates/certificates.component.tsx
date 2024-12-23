@@ -1,47 +1,75 @@
-import css from './certificates.module.scss';
-import { en } from '../../../../assets/lang/en';
+import css from "./certificates.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import useLocalization from "../../../../assets/lang";
+import logoIso from "/src/assets/images/statics/certificate-1.png";
+import logoTier from "/src/assets/images/statics/certificate-2.png";
+import logoTier2 from "/src/assets/images/statics/certificate-3.png";
 
 const CertificatesComponent = () => {
     const certificateData = [
         {
             id: 1,
-            img: '/src/assets/images/statics/certificate-1.png'
+            img: logoIso,
         },
         {
             id: 2,
-            img: '/src/assets/images/statics/certificate-2.png'
+            img: logoTier,
         },
         {
             id: 3,
-            img: '/src/assets/images/statics/certificate-3.png'
+            img: logoTier2,
         },
         {
             id: 4,
-            img: '/src/assets/images/statics/certificate-1.png'
+            img: logoIso,
         },
         {
             id: 5,
-            img: '/src/assets/images/statics/certificate-2.png'
+            img: logoTier,
         },
         {
             id: 6,
-            img: '/src/assets/images/statics/certificate-4.png'
+            img: logoIso,
         },
-    ]
-  return (
-    <div className={css.certificates}>
-        <h2 className={css.title}>{en.certificates_title}</h2>
-        <div className={css.certificatesContainer}>
-            {
-                certificateData?.map((logo)=> (
-                    <div className={css.card}>
-                        <img src={logo.img} alt={en.client_img_alt} />
-                    </div>
-                ))
-            }
-        </div>
-    </div>
-  )
-}
+    ];
 
-export default CertificatesComponent
+    const translate = useLocalization();
+
+    return (
+        <div className={css.certificates}>
+            <div className='container'>
+                <h2 className={css.title}>{translate("certificates_title")}</h2>
+                <div className={css.certificatesContainer}>
+                    <Swiper
+                        slidesPerView={6}
+                        spaceBetween={30}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        className="mySwiper"
+                        breakpoints={{
+                            768: {
+                                slidesPerView: 6,
+                                spaceBetween: 30,
+                            },
+                            0: {
+                                slidesPerView: 3.5,
+                                spaceBetween: 35,
+                            },
+                        }}
+                    >
+                        {certificateData?.map((logo) => (
+                            <SwiperSlide key={logo.id} className={css.card}>
+                                <img src={logo.img} alt={translate("client_img_alt")} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default CertificatesComponent;

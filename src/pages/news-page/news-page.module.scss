@@ -1,70 +1,73 @@
 @import '../../assets/styles/style.scss';
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin-top: rem(92);
-    margin-bottom: rem(63);
-    @include breakpoint($md) {
-        flex-wrap: wrap;
-    }
-    h2 {
-        font-size: rem($title);
+
+.newsContainer{
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem(92);
+        margin-bottom: rem(63);
         @include breakpoint($md) {
-            width: $max-width;
-            margin-bottom: rem(34);
+            flex-wrap: wrap;
+            margin-bottom: rem(22);
+            margin-top: rem(44);
         }
-    }
-    .searchFilter {
-        width: 50%;
-        position: relative;
-        .filterContainer {
-            position: relative;
-            width: 100%;
-            display: flex;
-            align-items: center;
+        h2 {
+            font-size: rem($title);
+            font-family: $latoBold;
             @include breakpoint($md) {
                 width: $max-width;
+                margin-bottom: rem(34);
             }
-            .searchInput {
+        }
+        .searchFilter {
+            width: 50%;
+            position: relative;
+            @include breakpoint($md) {
                 width: 100%;
-                padding: 16px 0 16px 50px;
-                border: 1px solid $news-card-border-color;
-                border-radius: rem(41);
-                font-size: rem($web-little-text);
-                outline: none;
-    
-                &:focus {
-                    border-color: $main-text-color;
-                }
-    
-                &::placeholder {
-                    color: $news-placeholder-color;
-                }
             }
-    
-            .searchIcon {
-                position: absolute;
-                left: rem(15);
-            }
-    
-            .filterIcon {
-                position: absolute;
-                right: rem(5);
-                cursor: pointer;
+            .filterContainer {
+                position: relative;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                .searchInput {
+                    width: 100%;
+                    padding: 16px 0 16px 50px;
+                    border: 1px solid $news-card-border-color;
+                    border-radius: rem(41);
+                    font-size: rem($web-little-text);
+                    outline: none;
+        
+                    &:focus {
+                        border-color: $main-text-color;
+                    }
+        
+                    &::placeholder {
+                        color: $news-placeholder-color;
+                    }
+                }
+        
+                .searchIcon {
+                    position: absolute;
+                    left: rem(15);
+                }
+        
+                .filterIcon {
+                    position: absolute;
+                    right: rem(5);
+                    cursor: pointer;
+                }
             }
         }
     }
-}
-
-.news {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; 
-    gap: calc((100% - (3 * 31%)) / 2);
-    .card {
-        width: 31%;
+    .pagination {
+        margin-bottom: rem(136);
+        display: flex;
+        justify-content: center;
+        margin-top: rem(32);
     }
+}
     .noResult {
         margin: auto;
         display: flex;
@@ -78,5 +81,4 @@
             font-size: rem($text);
         }
     }
-}
 

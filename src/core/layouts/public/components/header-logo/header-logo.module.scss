@@ -1,0 +1,9 @@
+@import '/src//assets//styles/style.scss';
+.logo {
+    width: rem(160);
+    height: rem(40);
+    img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}

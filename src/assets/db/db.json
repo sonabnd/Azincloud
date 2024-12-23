@@ -2,7 +2,7 @@
     "news": [
         {
             "id": 1,
-            "heading": "'AzInTelecom' LLC provides high-quality public cloud services.",
+            "heading": "'AzInTelecom' LLC provides high-quality.",
             "date": "01.01.2024",
             "img1": "/src/assets/images/statics/news-details-1.jpg",
             "img2": "/src/assets/images/statics/news-details-2.jpg",
@@ -95,127 +95,199 @@
     "availablePr": [
         {
             "id": 8,
-            "img": "../images/icons/product-IIA.png",
-            "heading": "IAS",
+            "img": "/src/assets/images/icons/product-icon-1.png",
+            "heading": "IasAS",
             "text": "Infrastructure as a Service",
             "price": "235 AZN"
         },
         {
             "id": 9,
-            "img": "/src/assets/images/statics/news-details-1.jpg",
+            "img": "/src/assets/images/icons/product-icon-2.png",
             "heading": "PaaS",
             "text": "Platform as a Service",
             "price": "144 AZN"
         },
         {
             "id": 10,
-            "img": "../images/icons/behance-img.png",
+            "img": "/src/assets/images/icons/product-icon-3.png",
             "heading": "SaaS",
             "text": "Infrastructure as a Service",
             "price": "25 AZN"
         },
         {
             "id": 11,
-            "img": "../images/icons/behance-img.png",
+            "img": "/src/assets/images/icons/product-icon-4.png",
             "heading": "AgjS",
             "text": "Infrastructure as a Service",
             "price": "7654 AZN"
         },
         {
             "id": 12,
-            "img": "../images/icons/product-IIA.png",
+            "img": "/src/assets/images/icons/product-icon-1.png",
             "heading": "PfgY",
             "text": "Infrastructure as a Service",
             "price": "876 AZN"
         },
         {
             "id": 13,
-            "img": "/src/assets/images/statics/news-details-1.jpg",
+            "img": "/src/assets/images/icons/product-icon-4.png",
             "heading": "GuyT",
             "text": "Platform as a Service",
             "price": "97 AZN"
         },
         {
             "id": 14,
-            "img": "../images/icons/behance-img.png",
+            "img": "/src/assets/images/icons/product-icon-3.png",
             "heading": "SaaS",
             "text": "Infrastructure as a Service",
             "price": "100 AZN"
         },
         {
             "id": 15,
-            "img": "../images/icons/behance-img.png",
+            "img": "/src/assets/images/icons/product-icon-2.png",
             "heading": "SaaS",
             "text": "Infrastructure as a Service",
             "price": "0 AZN"
         },
         {
             "id": 16,
-            "img": "../images/icons/product-IIA.png",
+            "img": "/src/assets/images/icons/product-icon-1.png",
             "heading": "IAS",
             "text": "Infrastructure as a Service",
             "price": "235 AZN"
         },
         {
             "id": 17,
-            "img": "/src/assets/images/statics/news-details-1.jpg",
+            "img": "/src/assets/images/icons/product-icon-3.png",
             "heading": "PaaS",
             "text": "Platform as a Service",
             "price": "144 AZN"
         },
         {
             "id": 18,
-            "img": "../images/icons/behance-img.png",
+            "img": "/src/assets/images/icons/product-icon-4.png",
             "heading": "SaaS",
             "text": "Infrastructure as a Service",
             "price": "25 AZN"
         },
         {
             "id": 19,
-            "img": "../images/icons/behance-img.png",
+            "img": "/src/assets/images/icons/product-icon-1.png",
             "heading": "AgjS",
             "text": "Infrastructure as a Service",
             "price": "7654 AZN"
         },
         {
             "id": 20,
-            "img": "../images/icons/product-IIA.png",
+            "img": "/src/assets/images/icons/product-icon-2.png",
             "heading": "PfgY",
+            "text": "Infrastructure as a Service",
+            "price": "876 AZN"
+        }
+    ],
+    "upcomingPr": [
+        {
+            "id": 252,
+            "img": "/src/assets/images/icons/product-icon-1.png",
+            "heading": "H",
+            "text": "Infrastructure as a Service",
+            "price": "235 AZN"
+        },
+        {
+            "id": 26625,
+            "img": "/src/assets/images/icons/product-icon-2.png",
+            "heading": "L",
+            "text": "Platform as a Service",
+            "price": "144 AZN"
+        },
+        {
+            "id": 1556,
+            "img": "/src/assets/images/icons/product-icon-3.png",
+            "heading": "Y",
+            "text": "Infrastructure as a Service",
+            "price": "25 AZN"
+        },
+        {
+            "id": 736,
+            "img": "/src/assets/images/icons/product-icon-4.png",
+            "heading": "B",
+            "text": "Infrastructure as a Service",
+            "price": "7654 AZN"
+        },
+        {
+            "id": 9876,
+            "img": "/src/assets/images/icons/product-icon-1.png",
+            "heading": "O",
             "text": "Infrastructure as a Service",
             "price": "876 AZN"
         },
         {
-            "id": 21,
-            "img": "/src/assets/images/statics/news-details-1.jpg",
-            "heading": "GuyT",
+            "id": 185,
+            "img": "/src/assets/images/icons/product-icon-4.png",
+            "heading": "V",
             "text": "Platform as a Service",
             "price": "97 AZN"
         },
         {
-            "id": 22,
-            "img": "../images/icons/behance-img.png",
-            "heading": "SaaS",
+            "id": 653,
+            "img": "/src/assets/images/icons/product-icon-3.png",
+            "heading": "T",
             "text": "Infrastructure as a Service",
             "price": "100 AZN"
         },
         {
-            "id": 23,
-            "img": "../images/icons/behance-img.png",
-            "heading": "SaaS",
+            "id": 654,
+            "img": "/src/assets/images/icons/product-icon-2.png",
+            "heading": "X",
             "text": "Infrastructure as a Service",
             "price": "0 AZN"
+        },
+        {
+            "id": 8765,
+            "img": "/src/assets/images/icons/product-icon-1.png",
+            "heading": "M",
+            "text": "Infrastructure as a Service",
+            "price": "235 AZN"
+        },
+        {
+            "id": 876,
+            "img": "/src/assets/images/icons/product-icon-3.png",
+            "heading": "T",
+            "text": "Platform as a Service",
+            "price": "144 AZN"
+        },
+        {
+            "id": 445,
+            "img": "/src/assets/images/icons/product-icon-4.png",
+            "heading": "T",
+            "text": "Infrastructure as a Service",
+            "price": "25 AZN"
+        },
+        {
+            "id": 65,
+            "img": "/src/assets/images/icons/product-icon-1.png",
+            "heading": "T",
+            "text": "Infrastructure as a Service",
+            "price": "7654 AZN"
+        },
+        {
+            "id": 85,
+            "img": "/src/assets/images/icons/product-icon-2.png",
+            "heading": "T",
+            "text": "Infrastructure as a Service",
+            "price": "876 AZN"
         }
     ],
     "partners": [
         {
             "id": 24,
-            "img": "/src/assets/images/statics/news-details-1.jpg",
+            "img": "/src/assets/images/statics/partner-1.png",
             "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
             "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
         },
         {
             "id": 25,
-            "img": "../images/statics/client-4.png",
+            "img": "/src/assets/images/statics/partner-2.png",
             "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
             "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
         },
@@ -233,27 +305,77 @@
         },
         {
             "id": 28,
-            "img": "/src/assets/images/statics/news-details-1.jpg",
+            "img": "/src/assets/images/statics/partner-1.png",
             "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
             "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
         },
         {
             "id": 29,
-            "img": "../images/statics/client-4.png",
+            "img": "/src/assets/images/statics/partner-1.png",
             "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
             "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
         },
         {
             "id": 30,
-            "img": "/src/assets/images/statics/partner-3.png",
+            "img": "/src/assets/images/statics/partner-2.png",
             "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
             "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
         },
         {
             "id": 31,
-            "img": "/src/assets/images/statics/partner-4.png",
+            "img": "/src/assets/images/statics/partner-3.png",
             "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
             "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
+        },
+        {
+            "id": 28,
+            "img": "/src/assets/images/statics/partner-1.png",
+            "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
+            "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
+        },
+        {
+            "id": 29,
+            "img": "/src/assets/images/statics/partner-1.png",
+            "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
+            "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
+        },
+        {
+            "id": 30,
+            "img": "/src/assets/images/statics/partner-2.png",
+            "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
+            "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
+        },
+        {
+            "id": 31,
+            "img": "/src/assets/images/statics/partner-3.png",
+            "title": "AGcore və AzInTelecom texnoloji əməkdaşlığı haqqında.",
+            "text": "AzInTelecom” MMC 2015-ci ilin iyun ayında Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin qərarı ilə yaradılıb. Müəssisə yarandığı gündən daima inkişaf edərək çeşidli İKT məhsullar ilə xidmət keyfiyyətini daima yüksəldir.AzİnCloud “Azintelecom” MMC-in yaratdığı özəl bulud brendi dünyanın ən məhşur trendlərinin Kubernetes, İaaS, SaaS, İaC və s. məhsul və xidmətlərini özünə xidmət platforması vasitəsilə müştərilərinə təqdim edir.Müəssisənin əsas biznes sahələrindən hesab edilən dövlət buludu ilə yanaşı özəl bulud üçün də xeyli fəaliyyət istiqamətləri yaradaraq kiçik və orta sahibkarlar üçün AzİnCloud məhsulunu 05.05.2024 tarixində marketə çıxarıb.Özəl Bulud məhsul xidmətlərinə əsas texnoloji tərəfdaşı  “Gcore” MMC şirkəti 27 fevral 2014-cü ildə Avstriyada qurulub və dünyanın ən irəlidə gedən şirkətləri arasında nüfuz qazanmışdır və Hal hazırda Şimali, Cənubi Amerika, Avropa, Asiya, Avstraliya, Almatı, Azərbaycan regionda və 30 Məkanlar fəaliyyət göstərir. Texnoloji və biznes əməkdaşlığına “white label” şərtləri əsasında 08.06.2023-cü il"
+        }
+    ],
+    "numbers": [
+        {
+            "id": 32,
+            "img": "/src/assets/images/icons/number-icon-1.png",
+            "title": "Our team",
+            "number": "+420"
+        },
+        {
+            "id": 33,
+            "img": "/src/assets/images/icons/number-icon-2.png",
+            "title": "Our projects",
+            "number": "+ 130"
+        },
+        {
+            "id": 34,
+            "img": "/src/assets/images/icons/number-icon-3.png",
+            "title": "Private customers",
+            "number": "91"
+        },
+        {
+            "id": 35,
+            "img": "/src/assets/images/icons/number-icon-4.png",
+            "title": "Government customers",
+            "number": "70"
         }
     ]
 }

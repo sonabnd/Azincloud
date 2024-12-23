@@ -7,7 +7,9 @@ export const en = {
     sign_in_text : 'Sign in',
 
 
-    intro_text: 'Cloud is Global CSP of GCore now.',
+    intro_text1: 'Cloud is Global CSP of GCore now.',
+    intro_text2: 'Məlumat təhlükəsizliyini təmin etmək üçün dataları buludda saxla!',
+    intro_text3: 'AzInCloud xidmətləri ilə əməliyyat səmərəliliyini artır!',
     about_text: '"AzInTelecom" LLC provides high-quality public cloud services for small and medium-sized enterprises in a data center that meets international standards and certificates in two different geographical areas in Azerbaijan. From resource control and customization for corporate use to ease of application development and maintenance, public cloud services are provided over the Internet and resources are shared among multiple users or tenants.',
     purpose: 'Meqsediiz',
     target: 'Hədəf',
@@ -22,7 +24,10 @@ export const en = {
     trust_title_2 : 'Texniki dəstək',
     trust_title_3 : 'Bazar üstünlükləri ',
     trust_title_4 : 'Texnoloji üstünlüklər',
-    trust_text_1: 'Bulud xidmətlərinin əldə edilməsi prosesini sadələşdirmək və istifadəçiyönümlü  xidmət təmin etməkdir.',
+    about_text_1: 'Cloud-un missiyası ən müasir bulud xidmətləri təklif etməklə rəqəmsal   infrastrukturu inkişaf etdirməkdir.',
+    about_text_2: 'Bulud xidmətlərinin əldə edilməsi prosesini sadələşdirmək və istifadəçiyönümlü  xidmət təmin etməkdir.',
+    about_text_3: 'ACənubi Qafqaz regionunda bulud əsaslı xidmətlərdə yeni standartlar müəyyən   edən, rəqəmsal transformasiyaya təkan verən aparıcı bulud xidməti provayderi   kimi daim ön sırada olmaqdır.',
+    about_text_4: 'Kiçik və orta sahibkarlar üçün yüksək keyfiyyətli ictimai bulud xidmətləri təqdim etmək.',
     our_team_text: 'Our team',
     our_projects_text: 'Our projects',
     private_customers_text: 'Private customers',
@@ -40,8 +45,9 @@ export const en = {
     technical_assistance_text: 'Texniki kömək',
     faq_text: 'FAQ',
     law_text: 'Hüquq',
-    author_text: 'Bütün hüquqlar qorunur. Copyright © 2015–2024 Azintelecom MMC.',
+    author_text: 'Bütün hüquqlar qorunur. Copyright © 2015-',
     author_link: '(burdan link Müraciət formuna)',
+    location: '74, Alibey Huseynzade, AZ1009, Baku,Azerbaijan',
 
     // Contact page
     our_contacts_title: 'Our contacts',
@@ -73,6 +79,7 @@ export const en = {
     about_img_alt : 'About image',
     client_img_alt: 'Client logo',
     img_alt: 'Img',
+    no_result: 'No results were found in your result',
     // about_btn: 'Daha çox'
 
     // contact
@@ -96,4 +103,8 @@ export const en = {
     // notFound
     not_found: 'Axtardığınız səhifə tapılmadı. Zəhmət olmasa ana səhifəyə qayıdın.',
     home: 'Ana səhifə',
+
+    // trust
+    trust_text_1: 'Bulud xidmətlərinin əldə edilməsi prosesini sadələşdirmək və istifadəçiyönümlü  xidmət təmin etməkdir.',
+    trust_text_2: 'info@cloud.az  və ya 157 Çağrı Mərkəzi   ilə əlaqə saxlayaraq 7/24 texniki dəstək əldə edə bilərsiniz.',
 }

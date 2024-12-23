@@ -26,6 +26,7 @@
         }
         h2 {
             font-size: rem($title);
+            font-family: $latoBold;
         }
         p {
             margin-top: rem(12);
@@ -47,6 +48,7 @@
             height: rem(54);
             color: $white-opacity;
             cursor: pointer;
+            font-family: $latoBlack;
         }
     }
 }

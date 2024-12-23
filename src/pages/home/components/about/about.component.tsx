@@ -5,13 +5,16 @@ import { en } from '../../../../assets/lang/en';
 import { useNavigate } from 'react-router-dom';
 import { Routes } from '../../../../router/routes';
 import { useCallback } from 'react';
+import useLocalization from '../../../../assets/lang';
 
 const AboutComponent = () => {
   const navigate = useNavigate();
-
+  const translate = useLocalization();
+  
   const aboutFunc = useCallback(() => {
     navigate(Routes.about)
-  }, [])
+  }, [navigate])
+
   return (
     <div className={css.about}>
         <div className={css.left}>
@@ -19,9 +22,9 @@ const AboutComponent = () => {
             <img className={css.topImg} src={AboutImg} alt={en.about_img_alt} />
         </div>
         <div className={css.right}>
-            <h2>{en.about_title}</h2>
-            <p>{en.about_text}</p>
-            <button onClick={aboutFunc}>{en.more_text}</button>
+            <h2>{translate('about_title')}</h2>
+            <p>{translate('about_text')}</p>
+            <button onClick={aboutFunc}>{translate('more_text')}</button>
         </div>
     </div>
   )

@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
 import css from "./help-pages.module.scss";
 import { en } from "../../../assets/lang/en";
+import useLocalization from "../../../assets/lang";
 
-const linkData = [
-    {
-        link: en.technical_assistance_text,
-    },
-    {
-        link: en.faq_text,
-    },
-    {
-        link: en.law_text,
-    },
-];
 const HelpPagesComponent = () => {
+    const translate = useLocalization();
+
+    const linkData = [
+        {
+            link: translate('technical_assistance_text'),
+        },
+        {
+            link: translate('faq_text'),
+        },
+        {
+            link: translate('law_text'),
+        },
+    ];
     return (
         <>
             {linkData.map((item) => (

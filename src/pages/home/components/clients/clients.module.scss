@@ -12,24 +12,39 @@
         color: $title-text-color;
         text-align: center;
         margin-bottom: rem(46);
+        font-family: $latoBold;
+        @include breakpoint($md) {
+            text-align: start;
+            font-size: rem(24);
+            margin-bottom: rem(24);
+        }
     }
     .clientContainer {
         display: flex;
-        gap: rem(19);
+        justify-content: space-between;
         @include breakpoint($md) {
-            width: $max-width;
+
         }
-        .box {
-            width: 16%;
-            border-right: 2px solid $client-line-color;
+        .box{
+            // background-color: red;
+            border-right: 1px solid $client-line-color;
+            padding-right: rem(19);
+            // padding-left: rem(19);
             display: flex;
             justify-content: center;
+            align-items: center;
+            img {
+            }
             @include breakpoint($md) {
-                width: 30%;
+                padding-right: rem(16);
+                padding-left: rem(16);
             }
         }
         .box:last-child {
             border-right: none;
+        }
+        .box:first-child {
+            padding-left: 0;
         }
     }
 }

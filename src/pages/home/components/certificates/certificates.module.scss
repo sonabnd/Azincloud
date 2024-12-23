@@ -3,21 +3,44 @@
 .certificates {
     background-color: $main-bg;
     padding: rem(62) 0;
+    @include breakpoint($md) {
+        padding: rem(44) 0;
+    }
     .title {
         font-size: rem($title);
         color: $title-text-color;
         text-align: center;
         margin-bottom: rem(44);
+        font-family: $latoBold;
+        @include breakpoint($md) {
+            font-size: rem(24);
+            text-align: start;
+            margin-bottom: rem(24);
+        }
     }
     .certificatesContainer {
-        width: 60%;
+        box-sizing: border-box;
+        width: 90%;
         margin: auto;
         display: flex;
         justify-content: space-between;
+        @include breakpoint($md) {
+            width: 98%;
+            margin: auto;
+        }
         .card {
-            width: 16%;
             display: flex;
             justify-content: center;
+            transition: transform 0.3s ease; 
+            overflow: visible;
+            cursor: pointer;
+            img {
+                transition: transform 0.3s ease; 
+            }
+            &:hover  {
+                transform: scale(1.1);
+                // height: 110px;
+            }
         }
     }
 }

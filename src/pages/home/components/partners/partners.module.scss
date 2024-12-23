@@ -4,40 +4,62 @@
 .partners {
     display: flex;
     justify-content: space-between;
-
+    @include breakpoint($lg){
+        flex-direction: column;
+    }
+    .mobileImg {
+        display: none;
+        @include breakpoint($lg) {
+            display: block;
+        }
+    }
     .partnersLeft {
-        width: 30%;
+        // width: 50%;
 
         .title {
             margin-top: 90px;
             font-size: rem($title);
             color: $title-text-color;
             margin-bottom: rem(14);
+            font-family: $latoBold;
         }
 
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: rem(146);
-
+        margin-left: rem(46);
+        @include breakpoint($md) {
+            margin-left: 0;
+        }
         .cardContainer {
             margin-bottom: rem(39);
             margin-top: rem(44);
             width: 100%;
             display: flex;
             height: rem(313);
-
-            .slider {
-                display: flex;
-                z-index: 6;
-
-                .card {
-                    width: 100%;
-                    height: 100%;
-                    cursor: pointer;
-
-                    img {
+            .mySwiper {
+                .slider {
+                    display: flex;
+    
+                    .cardBox {
+                        width: 100%;
                         height: 100%;
+                        cursor: pointer;
+                        display: flex;
+                        @include breakpoint($md) {
+                            display: block;
+                            gap: rem(3);
+                        }
+                        img {
+                            width: 244px;
+                            height: 146px;
+                            margin-right: rem(30);
+                        }
+                        .card {
+                            @include breakpoint($md) {
+                                margin-bottom: rem(12);
+                            }
+                        }
                     }
                 }
             }
@@ -46,11 +68,21 @@
         .details {
             display: flex;
             gap: rem(22);
-
+            font-family: $latoBold;
+            cursor: pointer;
+            margin-bottom: rem(92);
             span {
                 font-size: rem($text);
                 color: $blue-opacity;
             }
         }
     }
+    .partnersRight {
+        @include breakpoint($lg) {
+            display: none;
+        }
+    }
+    // @include breakpoint($lg) {
+    //     display: none;
+    // }
 }

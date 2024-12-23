@@ -12,6 +12,7 @@
         justify-content: space-between;
         .heading {
             font-size: rem($title);
+            font-family: $latoBold;
         }
         .headerRight {
             img {
@@ -25,6 +26,7 @@
                 font-size: rem($text);
                 color: $blue-opacity;
                 cursor: pointer;
+                font-family: $latoBlack;
             }
             @include breakpoint($md) {
                 display: none;

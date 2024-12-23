@@ -1,1 +1,70 @@
-@import '/src/assets/styles/style.scss'
+@import '/src/assets/styles/style.scss';
+
+.hamburgerMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: 1001;
+    .img {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        margin-top: rem(22);
+    }
+    .navbarList {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: rem(20);
+        .link {
+            color: $option-text-color;
+            font-weight: 600;
+            display: inline-block;
+            font-size: rem(16);
+            margin-bottom: rem(22);
+            font-weight: 600;
+        }
+    }
+    .btn {
+        button {
+            width: 100%;
+            border: none;
+            padding-top: rem(12);
+            padding-bottom: rem(12);
+            background-color: $sign-text-color;
+            border-radius: rem(41);
+            color: $white;
+            font-weight: 600;
+            font-size: rem(16);
+            margin-bottom: rem(22);
+        }
+    }
+    .languageContainer {
+        padding-top: rem(22);
+        padding-bottom: rem(22);
+        border-top: 1px solid rgba(18, 71, 95, 0.15);
+        border-bottom: 1px solid rgba(18, 71, 95, 0.15);
+        margin-bottom: rem(22);
+        .languageList {
+            display: flex;
+            justify-content: center;
+            gap: rem(22);
+            font-size: rem(16);
+            font-weight: 600;
+            .selected {
+                color: $main-text-color;
+            }
+        }
+    }
+    .contactComponent {
+        margin-bottom: rem(42);
+    }
+    .socialComponent {
+        width: 70%;
+        margin: auto;
+    }
+}
+

@@ -6,10 +6,10 @@
     color: $header-text-color;
     padding-top: rem(38);
     padding-bottom: rem(38);
+    font-family: $latoBold;
     @include breakpoint($md) {
-        padding-top: rem(12);
-        padding-bottom: rem(12);
-        
+        padding-top: rem(17);
+        padding-bottom: rem(17);
     }
     .headerContainer {
         display: flex;
@@ -17,6 +17,25 @@
         .right {
             display: flex;
             justify-content: space-between;
+            @include breakpoint($lg) {
+                display: none;
+            }
+        }
+        .mobile {
+            display: none;
+            @include breakpoint($lg) {
+                display: block;
+            }
         }
     }
+}
+
+
+.hamburgerMenuWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100vh;
+    z-index: 1000;
 }

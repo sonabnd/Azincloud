@@ -2,24 +2,41 @@ import { Link } from 'react-router-dom'
 import { en } from '../../../../../assets/lang/en'
 import { Routes } from '../../../../../router/routes'
 import css from './header-navbar.module.scss'
+import useLocalization from '../../../../../assets/lang'
+import { generateGuid } from '../../../../helpers/generate-guid'
 
 const HeaderNavbarComponent = () => {
+  const translate = useLocalization();
+
+  const navData = [
+    {
+      link: translate('about_title'),
+      path: Routes.about,
+    },
+    {
+      link: translate('products_services_title'),
+      path: Routes.products,
+    },
+    {
+      link: translate('news_blog_title'),
+      path: Routes.news,
+    },
+    {
+      link: translate('contact_title'),
+      path: Routes.contact,
+    },
+  ]
   return (
     <div className={css.navbar}>
-        <ul>
-          <li>
-            <Link to={Routes.about}>{en.about_title}</Link>
-          </li>
-          <li>
-            <Link to={Routes.products}>{en.products_services_title}</Link>
-          </li>
-          <li>
-            <Link to={Routes.news}>{en.news_blog_title}</Link>
-          </li>
-          <li>
-            <Link to={Routes.contact}>{en.contact_title}</Link>
-          </li>
-        </ul>
+      <ul>
+        {
+          navData.map(item => (
+            <li key={generateGuid()}>
+              <Link to={item.path}>{item.link}</Link>
+            </li>
+          ))
+        }
+      </ul>
     </div>
   )
 }

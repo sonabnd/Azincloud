@@ -3,18 +3,16 @@
 .navbar {
     display: flex;
     align-items: center;
-        // width: 70%;
         ul {
             display: flex;
             justify-content: space-between;
-            gap: rem(32);
-
+            gap: rem(34);
             li a {
                 color: $header-text-color;
                 text-decoration: none;
             }
         }
-        @include breakpoint($md) {
+        @include breakpoint($lg) {
             display: none;
         }
 }

@@ -4,7 +4,9 @@
     margin-bottom: 20px;
     font-size: rem($title);
     color: $white;
+    font-family: $latoBold;
 }
+
 .bottom {
     @include breakpoint($md) {
         width: 95%;
@@ -14,89 +16,78 @@
     .formContainer {
         display: flex;
         justify-content: space-between;
+
         .form {
             display: flex;
             flex-direction: column;
             width: 48%;
+
             @include breakpoint($md) {
                 width: 100%;
+                margin: auto;
             }
+
             .row {
                 display: flex;
-                gap: 22px;
-    
+                width: 100%;
+                margin-left: rem(1);
+                justify-content: space-between;
+
                 .formItem {
-                    flex: 1;
+                    width: 48%;
                 }
             }
-    
+
             .input,
             .select,
             .textarea {
                 border-radius: rem($contact-form-border-radius);
                 border: none;
                 padding: rem(16) rem(0) rem(16) rem(24);
-    
+
                 &::placeholder {
                     font-size: rem($web-little-text);
                     color: $title-text-color;
                 }
             }
-    
+
             .textareaUpload {
                 position: relative;
-    
+
                 .textarea {
                     padding-top: rem(24);
                     padding-left: rem(24);
                     resize: none;
                 }
-    
+
                 .uploadContainer {
                     position: absolute;
                     bottom: rem(40);
                     left: rem(28);
-    
+
                     .uploadButton {
                         padding: rem(26) rem(40);
                         border: 1px dashed $main-text-color;
                         border-radius: rem($contact-form-border-radius);
                     }
-    
                 }
             }
-    
-    
+
             .deleteButton {
                 color: red;
             }
-    
+
             .fileDetails {
                 display: flex;
                 align-items: center;
                 gap: 10px;
             }
-    
-            .robot {
-                background-color: $white;
-                border-radius: rem(41);
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: rem(8) rem(32);
-    
-                .checkbox {
-                    margin-top: rem(20);
-                }
-    
-                .img {
-                    width: rem(66);
-                    height: rem(66);
-                }
+
+            .recaptchaWrapper {
+                .recaptcha {}
             }
-    
+
             .submitButton {
-                background-color: red;
                 color: $white;
                 border: none;
                 border-radius: rem($contact-form-border-radius);
@@ -108,19 +99,22 @@
                 cursor: pointer;
                 width: 100%;
                 background-color: $main-text-color;
+                font-family: $latoBlack;
             }
         }
-    
+
         .imgContainer {
             position: relative;
-            @include breakpoint ($md) {
+
+            @include breakpoint($md) {
                 display: none;
             }
+
             .contactImg {
                 position: absolute;
                 top: 0;
                 right: rem(40);
-                top: rem(70)
+                top: rem(70);
             }
         }
     }
@@ -149,7 +143,7 @@
         padding-top: rem(16);
         padding-bottom: rem(16);
         width: 80%;
-        margin-top: rem(65);
+        margin-top: rem(44);
         border-radius: rem(41);
         background: none;
     }

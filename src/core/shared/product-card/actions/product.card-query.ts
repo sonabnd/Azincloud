@@ -1,5 +1,19 @@
-import { useQuery } from "react-query"
-import { getAvailablePrServices } from "./product-card.service";
+import { useQuery } from "react-query";
+import { getProductsByType } from "./product-card.service"; 
 
-export const useAvailablePr = ()=>{
-    return useQuery<[], Error>('availablePr', getAvailablePrServices)};
+export const useProductsByType = (type) => {
+  return useQuery([type], () => getProductsByType(type), {
+  });
+};
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,36 +5,73 @@
     padding-bottom: rem(92);
     background-image: url(../../../../assets/images/statics/number-bg.png);
     background-size: cover;
+    @include breakpoint($md) {
+        padding-top: rem(44);
+        padding-bottom: rem(23);
+    }
     .numberContainer {
         display: flex;
         justify-content: space-between;
+
         @include breakpoint($md) {
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
+
         .card {
-            width: 25%;
-            border-right: 1px solid;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             color: $white-opacity;
-            border-right: 1px solid $white-opacity;
             @include breakpoint($md) {
-                border-right: none;
-                border-bottom: 1px solid $white-opacity;
+                margin-top: rem(-90);
+                &:first-child {
+                    margin-top: 0;
+                }
             }
+
             .text {
-                margin-top: rem(34) ;
+                margin-top: rem(34);
                 margin-bottom: rem(8);
                 font-size: rem(24);
+                margin-top: rem(34);
+                color: $white-opacity-80;
+                @include breakpoint($md) {
+                    font-size: rem(20);
+                }
+    
             }
+
             span {
                 font-size: rem(50);
+                margin-top: rem(8);
+                font-family: $latoBlack;
+                @include breakpoint($md) {
+                    font-size: rem(24);
+                }
             }
         }
-        .card:last-child {
+
+        &:last-child {
             border-right: none;
+        }
+
+        .line {
+            width: 1px;
+            background-color: $white-opacity-half;
+            height: rem(176);
+            margin: auto;
+
+            @include breakpoint($md) {
+                transform: rotate(90deg);
+                margin-top: rem(-80);
+                height: rem(277)
+            }
+        }
+        .line:last-child {
+            display: none;
         }
     }
 }

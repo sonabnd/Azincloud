@@ -2,19 +2,23 @@
 
 
 .box {
-    padding-top: rem(32);
-    padding-bottom: rem(32);
     border-radius: rem(28);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
     color: $products-text-color;
     background-color: $white-opacity;
-    box-shadow: 0px 4px 16px 0px rgba(18, 71, 95, 0.07);
-
+    box-shadow: 0px 4px 16px 0px #12475F12;
+    cursor: pointer;
+    border: 1px solid #F0F1F4;
+    padding: rem(32);
+    height: rem(292);
+    text-align: center;
+    width: 100%;
     @include breakpoint($md) {
-        width: 96%;
+        // width: 96%;
+        // height: rem(280);
+        padding: rem(32) rem(18);
     }
 
     .circle {
@@ -26,14 +30,27 @@
         background-color: $products-circle-bg-color;
         border-radius: rem(36);
     }
+    img {
+        width: rem($products-circle);
+        height: rem($products-circle);
+        margin: auto;
+        object-fit: contain;
+    }
 
     p {
         margin-top: rem(12);
-        margin-bottom: rem(6);
+        margin-bottom: rem(8);
+        font-size: rem($text);
+        font-family: $latoBold;
     }
 
     span {
         margin-bottom: rem(32);
+        font-size: rem($text);
+        min-height: rem(20);
+        @include breakpoint($md) {
+            font-size: rem(16);
+        }
     }
 
     .price {
@@ -41,5 +58,9 @@
         padding: rem(18);
         background-color: $products-price-bg;
         border-radius: rem(18);
+        font-family: $latoBold;
+        display: inline-block;
+        margin: auto;
     }
 }
+

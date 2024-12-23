@@ -1,9 +1,15 @@
-import { API } from "../../../configs/api.config"
-import axiosInstance from "../../../configs/axios.config"
-import TableModel from "../models/table-model"
+import axiosInstance from "../../../configs/axios.config";
+import { API } from "../../../configs/api.config";
 
-export const getAvailablePrServices = () => {
-    return axiosInstance.get(API.availablePr).then(res => {
-        return res.data.map((item: any) => new TableModel(item));
-    });
+export const getProductsByType = (type) => {
+  const endpoint = type === "upcoming" ? API.upcomingPr : API.availablePr;
+  return axiosInstance.get(endpoint).then(res => {
+    return res.data; 
+  });
 };
+
+
+
+
+
+

@@ -1,28 +1,35 @@
+import useLocalization from '../../../assets/lang';
 import css from './contact-info.module.scss'
+import shortNumber from '/src/assets/images/icons/user-tag.png'
+import number from '/src/assets/images/icons/call.png';
+import email from '/src/assets/images/icons/message-text.png';
+import location from '/src/assets/images/icons/location.png';
 
 const ContactInfoComponent = () => {
+    const translate = useLocalization();
+
     const contactData =
     {
         contact: [
             {
                 id: 1,
-                img: "src/assets/images/icons/user-tag.png",
+                img: shortNumber,
                 text: "157",
             },
             {
                 id: 2,
-                img: "src/assets/images/icons/call.png",
+                img: number,
                 text: "+994 12 200 00 20",
             },
             {
                 id: 3,
-                img: "src/assets/images/icons/message-text.png",
+                img: email,
                 text: "info@cloud.az",
             },
             {
                 id: 4,
-                img: "src/assets/images/icons/location.png",
-                text: "74, Alibey Huseynzade, AZ1009, Baku,Azerbaijan",
+                img: location,
+                text: translate('location'),
             },
         ],
 
@@ -32,7 +39,7 @@ const ContactInfoComponent = () => {
             <ul className={css.contactList}>
                 {contactData.contact.map((contact) => (
                     <li key={contact.id}>
-                        <img src={contact.img} alt="bnm" />
+                        <img src={contact.img} alt={translate('img_alt')} />
                         <span>{contact.text}</span>
                     </li>
                 ))}

@@ -8,15 +8,30 @@
     padding-top: rem(52);
     padding-bottom: rem(46);
     border-radius: rem(28);
+    @include breakpoint($md) {
+        padding-top: rem(28);
+        padding-bottom: rem(28);
+    }
     .products {
-        width: 84%;
+        width: 92%;
         display: flex;
         margin: auto;
-        margin-top: rem(55);
+        margin-top: rem(45);
+        @include breakpoint($md) {
+            margin-top: rem(24);
+        }
+        .mySwiper {
+            padding: rem(15);
+            height: rem(330);
+            .slideCard {
+                padding: 25;
+            }
+        }
     }
     .more {
         display: flex;
         margin-top: rem(27);
+        font-weight: 500;
         cursor: pointer;
         p {
             margin-right: rem(10);

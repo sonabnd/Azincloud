@@ -1,90 +1,99 @@
 @import '../../../../assets/styles/abstracts/index.scss';
-.introduction {
 
-    height: 52vh;
-    @include breakpoint($md) {
-        height: 80vh;
-    }
-    .intro {
-        position: relative;
-        z-index: -1;
-        .introTop {
-            @include breakpoint($md) {
-                height: 20vh;
-                width: 100%;
-                background-color: red;
-            }
-            img {
-                width: 100%;
-                @include breakpoint($md) {
-                    height: 100vh;
-                    width: 100%;
-                }
-            }
-        }
-    
-        .introBottom {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            @include breakpoint($md) {
-                display: none;
-            }
-            img {
-                width: 100%;
-            }
-        }
-    }
-    .introMain {
+.introduction {
+    position: relative;
+
+    .backgroundImg {
         width: 100%;
-        margin: auto;
-        position: absolute;
-        top: rem(188);
-        display: flex;
-        justify-content: space-between;
+
+        img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            height: 100%;
+        }
+    }
+
+    .introMain {
+        padding-top: rem(90);
+
         @include breakpoint($md) {
             flex-direction: column;
-            top: rem(136);
+            padding-top: rem(68);
             align-items: center;
             text-align: center;
         }
-        .introRight {
+
+        .introImg {
+            img {
+                object-fit: cover;
+            }
             @include breakpoint($md) {
                 display: none;
             }
         }
-        .introLeft {
+
+        .introContent {
             color: $header-text-color;
+            margin-top: rem(24);
+            font-family: $latoBold;
             @include breakpoint($md) {
                 margin-bottom: rem(45);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            h2 {
-                margin-bottom: rem(115);
-                font-size: rem(50);
-                width: 76%;
+
+            .textSlider {
+                cursor: pointer;
+                margin-bottom: rem(70);
                 @include breakpoint($md) {
-                    margin-bottom: rem(45);
-                    width: 86%;
+                    margin-bottom: rem(0);
+                }
+                .heading {
+                    font-size: rem(50);
+                    line-height: rem(61);
+
+                    @include breakpoint($md) {
+                        width: 82%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: rem(28);
+                        line-height: rem(40);
+                    }
                 }
             }
+
             .imgMobile {
                 display: none;
+
                 @include breakpoint($md) {
                     display: block;
                     margin-bottom: rem(31);
                 }
             }
+
             .sliderContainer {
                 display: flex;
                 gap: rem(26);
+
                 .slider {
                     width: rem($slider-width);
                     border: 3px solid $slider-bg-color;
+                    cursor: pointer;
+                }
+                .activeSlider { 
+                    border: 3px solid $white;
                 }
             }
+        }
+    }
+
+    .introProduct {
+        margin-top: rem(180);
+        @include breakpoint($md) {
+            margin-top: rem(33);
         }
     }
 }

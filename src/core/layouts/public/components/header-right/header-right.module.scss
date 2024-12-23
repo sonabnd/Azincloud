@@ -4,8 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: rem(30);
-    margin-left: rem(45);
+    gap: rem(15);
+    margin-left: rem(25);
     cursor: pointer;
 
     i {
@@ -13,7 +13,7 @@
     }
 
     select {
-        width: 60px;
+        width: rem(60);
         appearance: none;
         background: none;
         border: none;
@@ -34,6 +34,7 @@
             justify-content: center;
             width: 120px;
             cursor: pointer;
+            font-family: $latoBold;
         }
     }
 
@@ -46,6 +47,7 @@
         border: 3px solid rgba($blue-500, 0.1);
         padding: 10px 0;
         cursor: pointer;
+        font-family: $latoBlack;
     }
     .selectBtn {
         display: flex;
@@ -58,7 +60,7 @@
 
     .menu {
         display: none;
-        @include breakpoint(768px) {
+        @include breakpoint($md) {
             display: block;
         }
         

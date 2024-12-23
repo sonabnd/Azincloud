@@ -29,6 +29,7 @@
             margin-left: rem(92);
             h2 {
                 font-size: rem($title);
+                font-family: $latoBold;
             }
             p {
                 margin-top: rem(12);
@@ -54,24 +55,18 @@
                 line-height: rem(25.6);
                 margin-top: rem(12);
             }
+            h2 {
+                font-family: $latoBold;
+            }
         }
         .bottomMain {
             margin-top: rem(112);
             margin-bottom: rem(65);
             .textImgTop {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: rem(134);
-                @include breakpoint($md) {
-                    flex-wrap: wrap-reverse;
-                }
                 .textImg{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: rem(32);
-                    width: 48%;
-                    @include breakpoint($md) {
+                        margin-left: rem(40);
+                    margin-top: rem(40);
+                    @include breakpoint($lg) {
                         margin-top: rem(24);
                         width: 100%;
                     }
@@ -82,6 +77,9 @@
                             align-items: center;
                             gap: rem(18);
                             font-size: rem(20);
+                            h4 {
+                                font-family: $latoBold;
+                            }
                         }
                         .text {
                             line-height: rem(25.6);
@@ -89,20 +87,27 @@
                     }
                 }
                 .purposeTargetImg {
-                    width: rem(500);
-                    height: rem(500);
-                    @include breakpoint($md) {
-                    }
                     img {
                         border-radius: rem(28);
-                        height: 100%;
+                        object-fit: cover;
+                        height: auto;
+                        @include breakpoint($lg) {
+                            &:last-child {
+                                margin-top: rem(30);
+                            }
+                        }
+                    }
+                }
+                .rowRewerse{
+                    display: flex;
+                    @include breakpoint($lg) {
+                        display: flex;
+                        flex-wrap: wrap-reverse;
                     }
                 }
             }
             .textImgTop:last-child {
-                @include breakpoint($md) {
-                    flex-wrap: wrap;
-                }
+                margin-top: rem(100);
             }
         }
     }

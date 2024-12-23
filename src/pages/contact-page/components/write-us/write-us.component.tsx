@@ -3,11 +3,12 @@ import { UploadOutlined } from "@ant-design/icons";
 import styles from "./write-us.module.scss";
 import contactFigure from "/src/assets/images/statics/form-bg-figure.png";
 import contactImg from "/src/assets/images/statics/form-img.png";
-import { en } from "../../../assets/lang/en";
+import { en } from "../../../../assets/lang/en";
 import { useCallback, useState } from "react";
-import robotImg from '../../../assets/images/statics/robot-img.png';
-import toastifyImg from '../../../assets/images/statics/toastify-img.png';
-import close from '../../../assets/images/icons/close-circle.png';
+import toastifyImg from '../../../../assets/images/statics/toastify-img.png';
+import close from '../../../../assets/images/icons/close-circle.png';
+import ReCAPTCHA from 'react-google-recaptcha';
+import useLocalization from "../../../../assets/lang";
 
 const { TextArea } = Input;
 const { Option } = Select;
@@ -15,6 +16,8 @@ const { Option } = Select;
 const WriteUsComponent = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [form] = Form.useForm();
+    const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+    const translate = useLocalization();
 
     const onFinish = (values: any) => {
         console.log("Form values:", values);
@@ -28,11 +31,15 @@ const WriteUsComponent = () => {
         setIsModalOpen(false);
         document.body.style.backgroundImage = "";
     }, [])
+    
+    const handleCaptchaChange = useCallback((value: string | null) => {
+        setCaptchaValue(value);
+    }, [captchaValue])
 
     return (
         <>
             <div className={styles.bottom}>
-                <h1 className={styles.title}>{en.write_us_title}</h1>
+                <h1 className={styles.title}>{translate('write_us_title')}</h1>
                 <div className={styles.formContainer}>
                     <Form
                         form={form}
@@ -43,66 +50,62 @@ const WriteUsComponent = () => {
                         <div className={styles.row}>
                             <Form.Item
                                 name="name"
-                                rules={[{ required: true, message: en.name_message }]}
+                                rules={[{ required: true, message: translate('name_message') }]}
                                 className={styles.formItem}
                             >
-                                <Input placeholder={en.name_placeholder} className={styles.input} />
+                                <Input placeholder={translate('name_placeholder')} className={styles.input} />
                             </Form.Item>
                             <Form.Item
-                                name={en.surname_placeholder}
-                                rules={[{ required: true, message: en.surname_message }]}
+                                name={translate('surname_placeholder')}
+                                rules={[{ required: true, message: translate('surname_message') }]}
                                 className={styles.formItem}
                             >
-                                <Input placeholder="Surname" className={styles.input} />
+                                <Input placeholder={translate('surname_placeholder')} className={styles.input} />
                             </Form.Item>
                         </div>
 
                         <Form.Item
                             name="email"
                             rules={[
-                                { required: true, message: en.email_message },
-                                { type: "email", message: en.email_correct_message },
+                                { required: true, message: translate('email_message') },
+                                { type: "email", message: translate('email_correct_message') },
                             ]}
                         >
-                            <Input placeholder="E-mail" className={styles.input} />
+                            <Input placeholder={translate('email_placeholder')} className={styles.input} />
                         </Form.Item>
 
                         <Form.Item
                             name="mobile"
-                            rules={[{ required: true, message: en.number_message }]}
+                            rules={[{ required: true, message: translate('number_message') }]}
                         >
-                            <Input placeholder={en.number_placeholder} className={styles.input} />
+                            <Input placeholder={translate('number_placeholder')} className={styles.input} />
                         </Form.Item>
 
                         <div className={styles.textareaUpload}>
                             <Form.Item
                                 name="message"
                                 rules={[
-                                    { required: true, message: en.text_message },
-                                    { max: 282, message: en.text_correct_message },
+                                    { required: true, message: translate('number_message') },
+                                    { max: 282, message: translate('text_correct_message') },
                                 ]}
                             >
-                                <TextArea rows={10} placeholder={en.text_placeholder} className={styles.textarea} />
+                                <TextArea rows={10} placeholder={translate('text_placeholder')} className={styles.textarea} />
                             </Form.Item>
 
                             <Form.Item name="file" className={styles.uploadContainer}>
                                 <Upload>
                                     <Button icon={<UploadOutlined />} className={styles.uploadButton}>
-                                        {en.upload_text}
+                                        {translate('upload_text')}
                                     </Button>
                                 </Upload>
                             </Form.Item>
                         </div>
-
-                        <div className={styles.robot}>
-                            <Form.Item
-                                name="captcha"
-                                valuePropName="checked"
-                                rules={[{ required: true, message: en.robot_message }]}
-                            >
-                                <Checkbox className={styles.checkbox}>{en.robot_text}</Checkbox>
-                            </Form.Item>
-                            <img className={styles.img} src={robotImg} alt="" />
+                        <div className={styles.recaptchaWrapper}>
+                            <ReCAPTCHA
+                                sitekey="6LdMUZ4qAAAAAGD_6JyD8ytgB1Fbw11uWuevaZRV"
+                                onChange={handleCaptchaChange}
+                                className={styles.recaptcha}
+                            />
                         </div>
 
                         <Form.Item>
@@ -110,8 +113,9 @@ const WriteUsComponent = () => {
                                 type="primary"
                                 htmlType="submit"
                                 className={styles.submitButton}
+                                disabled={!captchaValue}
                             >
-                                {en.send_text}
+                                {translate('send_text')}
                             </Button>
                         </Form.Item>
                     </Form>
@@ -135,7 +139,7 @@ const WriteUsComponent = () => {
                         <img onClick={closeModal} src={close} alt="" />
                     </div>
                     <img className={styles.img} src={toastifyImg} alt="" />
-                    <button className={styles.btn} onClick={closeModal}>{en.close}</button>
+                    <button className={styles.btn} onClick={closeModal}>{translate('close')}</button>
                 </div>
             )}
         </>
